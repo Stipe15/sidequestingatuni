@@ -4,7 +4,9 @@
       "Bash(npm create:*)",
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
-      "Bash(timeout 5 npm run dev:*)"
+      "Bash(timeout 5 npm run dev:*)",
+      "Bash(git config:*)",
+      "Bash(npm ls:*)"
     ]
   }
 }
