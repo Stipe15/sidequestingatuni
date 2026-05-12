@@ -7,7 +7,9 @@
       "Bash(timeout 5 npm run dev:*)",
       "Bash(git config:*)",
       "Bash(npm ls:*)",
-      "WebFetch(domain:stipe15.github.io)"
+      "WebFetch(domain:stipe15.github.io)",
+      "Bash(gh run list:*)",
+      "Bash(powershell -Command \"gh run list --limit 3 --repo Stipe15/sidequestingatuni\":*)"
     ]
   }
 }
