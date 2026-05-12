@@ -1,7 +1,6 @@
 import { modeIcons } from '../data/quests';
 
 const modes = [
-  { id: 'all', label: 'All', icon: '🎲' },
   { id: 'solo', label: 'Solo', icon: modeIcons.solo },
   { id: 'duo', label: 'Duo', icon: modeIcons.duo },
   { id: 'squad', label: 'Squad', icon: modeIcons.squad }

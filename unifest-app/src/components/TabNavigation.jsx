@@ -1,7 +1,7 @@
 const tabs = [
   { id: 'quest', label: 'Quest', icon: '🎯' },
   { id: 'progress', label: 'Progress', icon: '📊' },
-  { id: 'profile', label: 'Profile', icon: '👤' }
+  { id: 'profile', label: 'Profil', icon: '👤' }
 ];
 
 export default function TabNavigation({ activeTab, onChange }) {
