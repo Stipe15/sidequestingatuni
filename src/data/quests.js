@@ -122,6 +122,14 @@ export const quests = [
     title: "Neon Glow",
     description: "Uslikaj selfie s osobom koja ima neon boju uz \"glow\" filter."
   },
+  {
+    id: "solo_common_16",
+    mode: "solo",
+    rarity: "common",
+    xp: 50,
+    title: "Rock Paper Scissors",
+    description: "Pobijedi nepoznatu osobu i igri kamen, škare, papir. Ako pobijediš proslavi, ako izgubiš ljutito otiđi."
+  },
 
   // SOLO - RARE (100 XP)
   {
