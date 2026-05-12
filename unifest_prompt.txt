@@ -1,0 +1,225 @@
+Ti si senior frontend developer. Izgradi produkcijski spremnu, ali jednostavnu web aplikaciju.
+
+🎯 CILJ PROJEKTA
+
+Izraditi web aplikaciju za studentski festival (UNIFEST) koja generira “sidequestove” (gamified challenges) za korisnike tijekom festivala.
+
+Aplikacija mora biti:
+
+mobile-first (primarno korištenje na mobitelu)
+ultra brza (korisnici su na festivalu, često pijani / u pokretu)
+bez backenda
+bez login sustava
+100% frontend (localStorage dozvoljen)
+optimizirana za shareanje sadržaja na društvene mreže
+🧠 CORE CONCEPT
+
+User dobiva random “quest card” koji sadrži:
+
+title
+description
+rarity (common / rare / epic / legendary)
+XP reward
+mode (solo / duo / squad)
+
+User može:
+
+generirati novi quest
+označiti quest kao completed
+dobiti “quest completion screen”
+snimiti sliku (kamera)
+shareati rezultat
+📦 TECH REQUIREMENTS
+
+Koristi:
+
+React + Vite
+TailwindCSS za styling
+Web APIs:
+navigator.mediaDevices.getUserMedia (kamera)
+Canvas API (image generation + watermark)
+navigator.share (Web Share API)
+localStorage (XP + completed quests)
+
+Bez:
+
+backend-a
+database-a
+auth sustava
+🎮 QUEST SYSTEM
+
+U aplikaciji već postoji JSON lista questova:
+
+{
+  "quests": [
+    {
+      "id": "solo_common_1",
+      "mode": "solo",
+      "rarity": "common",
+      "xp": 50,
+      "title": "Cheers Stranger",
+      "description": "Nazdravi s 3 potpuna stranca."
+    }
+  ]
+}
+
+Implementiraj:
+
+random quest generator
+weighted rarity system:
+common: 60%
+rare: 25%
+epic: 12%
+legendary: 3%
+
+Filter:
+
+solo / duo / squad mode
+🧾 QUEST CARD UI
+
+Svaki quest mora biti prikazan kao “quest card”:
+
+Prikaz:
+
+title (veliko)
+description
+rarity badge (color coded)
+XP reward
+mode icon
+
+Rarity styling:
+
+common → siva
+rare → plava
+epic → ljubičasta
+legendary → zlatna
+🏁 QUEST COMPLETION FLOW
+
+Kad user klikne:
+
+“Complete Quest”
+
+Otvori se screen:
+
+1. CAMERA MODE
+koristi getUserMedia
+front/back switch
+2. CAPTURE IMAGE
+snapshot u canvas
+3. GENERATE QUEST PROOF IMAGE
+
+Na slici mora biti overlay:
+
+UNIFEST QUEST COMPLETED
+quest title
+XP gained
+rarity badge
+watermark: “unifest-quest.app”
+
+Format:
+
+1080x1920 (Instagram Story ready)
+📤 SHARE FLOW
+
+Nakon generiranja slike:
+
+Dugmad:
+
+Save Image
+Share
+
+Ako browser podržava:
+
+koristi navigator.share()
+share image + text
+
+Ako ne:
+
+download image file
+🧠 XP SYSTEM
+
+Implementiraj:
+
+XP se sprema u localStorage
+level system:
+0–499 XP → Level 1
+500–999 XP → Level 2
+1000+ XP → Level 3 (etc.)
+
+Prikaži:
+
+XP bar
+level badge
+🎲 UI STRUCTURE
+
+Aplikacija mora imati 3 glavna taba:
+
+1. QUEST
+random quest generator
+filter: solo / duo / squad
+“Generate Quest” button
+2. PROGRESS
+XP
+level
+completed quests
+3. PROFILE
+stats
+total quests completed
+rarity breakdown
+⚡ UX REQUIREMENTS (KRITIČNO)
+
+Ovo je festival app:
+
+sve mora raditi u max 1–2 klika
+veliki buttoni
+minimal text input
+nema složenih formi
+instant feedback animacije
+
+Dodaj:
+
+subtle animations (Framer Motion ili CSS)
+haptic-like UI feel (scale on tap)
+📸 CAMERA UX (VAŽNO)
+full screen camera mode
+big shutter button
+instant capture
+no complicated controls
+optional flip camera button
+🧱 DESIGN STYLE
+dark mode default
+neon accent colors
+glassmorphism cards
+festival / party aesthetic
+modern “gaming UI” feel
+
+Inspiracija:
+
+mobile games UI
+Spotify visuals
+Snapchat filters vibe
+🚀 BONUS FEATURES 
+“legendary quest drop” animation
+confetti on completion
+QR code entry points (future expansion)
+offline support (PWA-ready structure)
+🧩 OUTPUT EXPECTATION
+
+Generiraj:
+
+kompletan working project
+clean folder structure
+komponentiziran kod
+bez placeholder pseudokoda
+⚠️ IMPORTANT
+
+Ne pitaj dodatna pitanja.
+Don’t overengineer backend.
+Focus on:
+
+speed
+UX
+fun
+virality
+
+This is a real-world festival app used by thousands of students in real time.
