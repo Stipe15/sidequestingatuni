@@ -130,6 +130,14 @@ export const quests = [
     title: "Rock Paper Scissors",
     description: "Pobijedi nepoznatu osobu i igri kamen, škare, papir. Ako pobijediš proslavi, ako izgubiš ljutito otiđi."
   },
+  {
+    id: "solo_common_17",
+    mode: "solo",
+    rarity: "common",
+    xp: 50,
+    title: "Tornado Zadar",
+    description: "Slikaj se s 2 osobe iz Zadra."
+  },
 
   // SOLO - RARE (100 XP)
   {
