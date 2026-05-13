@@ -281,10 +281,17 @@ export const quests = [
     mode: "solo",
     rarity: "rare",
     xp: 100,
-    title: "Imocki Mercedes",
+    title: "Mercedes City",
     description: "Slikaj se s 2 osobe iz Imotskog."
   },
-
+  {
+    id: "solo_rare_19",
+    mode: "solo",
+    rarity: "rare",
+    xp: 100,
+    title: "Linđoholic",
+    description: "Zapleši linđo s nekim."
+  },
   // SOLO - EPIC (200 XP)
   {
     id: "solo_epic_1",
